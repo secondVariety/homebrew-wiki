@@ -1,0 +1,75 @@
+/* Colours */
+@black: #282A2E;
+@white: #C5C8C6;
+@green: #8C9440;
+@blue: #5F819D;
+@purple: #85678F;
+@grey: #707880;
+
+/* Layout */
+* {
+    box-sizing: border-box;
+}
+html {
+    background: @black;
+    color: @white;
+    font-family: monospace;
+}
+body {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 3fr 1fr;
+}
+footer {
+    color: @grey;
+    font-size: .75rem;
+    grid-column: 1 / 3;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    hr {
+        margin-bottom: .75rem;
+    }
+}
+
+/* Typography */
+h1, h2, h3, h4 , h5, h6 {
+    color: @green;
+    text-transform: uppercase;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+a {
+    color: @blue;
+    text-decoration: underline;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+form {
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: .75rem;
+    input {
+        background: @white;
+        border: none;
+        padding: .5rem;
+    }
+}
+.btn{
+    background: @purple;
+    border: none;
+    color: @white;
+    cursor: pointer;
+    padding: .5rem;
+    text-transform: uppercase;
+    &:hover, &:focus {
+        background: darken(@purple,10%);
+    }
+}

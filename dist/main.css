@@ -1,0 +1,80 @@
+/* Colours */
+/* Layout */
+* {
+  box-sizing: border-box;
+}
+html {
+  background: #282A2E;
+  color: #C5C8C6;
+  font-family: monospace;
+}
+body {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+main {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3fr 1fr;
+}
+footer {
+  color: #707880;
+  font-size: 0.75rem;
+  grid-column: 1 / 3;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+footer hr {
+  margin-bottom: 0.75rem;
+}
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #8C9440;
+  text-transform: uppercase;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+a {
+  color: #5F819D;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+form {
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 0.75rem;
+}
+form input {
+  background: #C5C8C6;
+  border: none;
+  padding: 0.5rem;
+}
+.btn {
+  background: #85678F;
+  border: none;
+  color: #C5C8C6;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+.btn:hover,
+.btn:focus {
+  background: #695271;
+}
+
