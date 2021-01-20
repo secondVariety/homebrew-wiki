@@ -62,12 +62,19 @@ form {
         padding: .5rem;
     }
 }
+article {
+    .btn {
+        margin-right: 1rem;
+    }
+}
 .btn{
     background: @purple;
     border: none;
     color: @white;
     cursor: pointer;
+    display: inline-block;
     padding: .5rem;
+    text-decoration: none;
     text-transform: uppercase;
     &:hover, &:focus {
         background: darken(@purple,10%);

@@ -48,9 +48,9 @@ module.exports = {
   mode: 'development',
   watch: true,
   target: 'web',
-  /*externals: {
-    'fs' : 'fs'
-  },*/
+  node: {
+    fs: 'empty',
+  },
   plugins: [
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({ filename:'main.css' })

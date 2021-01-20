@@ -65,12 +65,17 @@ form input {
   border: none;
   padding: 0.5rem;
 }
+article .btn {
+  margin-right: 1rem;
+}
 .btn {
   background: #85678F;
   border: none;
   color: #C5C8C6;
   cursor: pointer;
+  display: inline-block;
   padding: 0.5rem;
+  text-decoration: none;
   text-transform: uppercase;
 }
 .btn:hover,
